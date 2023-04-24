@@ -22,23 +22,23 @@ Heb je dit nog niet? Installeer dit dan met hulp van de onderstaande links:
 ## 🔧 Hoe stel ik mijn database in?
 
 Als je XAMPP compleet gedownload is kunnen we beginnen aan het instellen van je database door te klikken op de start knop naast Apache en MySQL.
-Hiermee starten we onze servers, je kan dan bij de rij van MySQL klikken op `Admin` of je gaat naar een browser en vult dit in: *http://localhost/phpmyadmin/index.php* 
+Hiermee starten we onze servers, je kan dan bij de rij van MySQL klikken op `Admin` om je phpMyAdmin te openen in je browser.
 
-Je ziet nu het scherm van phpMyAdmin. Aan de linker kant staan al je databases, als het goed is zijn er al een paar. 
-Klik op 'Nieuw', dan maak je een nieuwe database aan. Dan kom je op een ander scherm, vul bij het vak "Databasenaam" de naam van jouw database.
-Dan kom je op een nieuw scherm, je ziet in dit project ook een folder genaamt 'sqlData', in die map staan 2 bestanden, dat is de data van jouw databases, maar die moeten we eerst nog importeren.
+Je ziet nu het scherm van phpMyAdmin. Aan de linker kant staan al je databases, als het goed is zijn er al een paar default databases weergegeven. 
+Klik op `Nieuw`, en maak hier je nieuwe database aan. Vul bij het vak `Databasenaam` de naam van jouw database in.
+Je database is nu aangemaakt, dus nu kunnen we een table gaan importeren. Ga in de bestanden naar de map `/sqlData`, en hierin zal je 1 bestand zien, dit is de data van jouw databases, maar die moeten we eerst nog importeren.
 
-Als je in je database bent (door aan de linker kant jouw database te selecteren) zie je boven aan je scherm een menu, hier staat onderandere 'Structuur', 'SQL', 'Zoeken', etc.
-In die navbar staat ook een tabje genaamd 'Importeren', daar klik je op. 
+Als je in je database bent *(door aan de linker kant jouw database te selecteren)* zie je boven aan je scherm een menu, hier staat onderandere `Structuur`, `SQL`, `Zoeken`, Ect.
+In deze navigatiebar staat ook een tabje genaamd `Importeren`, hier klik je op. 
 
-Je ziet dan verschillende cards, we hebben alleen de bovenste nodig, 'Te importeren bestand:', daar klik je op "Bestand Kiezen" en dan selecteer je het bestand in de map 'sqlData'.
-Als je dat gedaan hebt scroll je naar beneden, daar klik je op 'importeren'.
+Je ziet dan verschillende cards, we hebben alleen de bovenste nodig, `Te importeren bestand:`, daar klik je op **"Bestand Kiezen"** en selecteer dan je het bestand uit de map `sqlData`.
+Als je dat gedaan hebt scroll je naar beneden, daar klik je op **importeren**.
 
-*=-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-=*
+## ⏰ Hoe maak ik mijn API nu werkend?
 
-Gefeliciteerd, je hebt nu de database klaar gemaakt.
+Gefeliciteerd, je hebt nu de database klaar gemaakt!
 
-Nu gaan we naar onze public folder en dan naar het bestand index.php, in dat bestand zie je deze regels staan:
+Nu gaan we naar onze `public` folder en openen het bestand `index.php`. In dit bestand zie je deze regels staan:
 
 ```
 $host = 'localhost'; // Dit is de naam van jouw host, vaak is dit: localhost.
@@ -47,13 +47,13 @@ $user = 'root'; // Dit is de user van jouw database, dit is bijna altijd root, d
 $password = ''; // Dit is het password van jouw database, als je op localhost zit heb je nooit een password.
 ```
 
-Dit staat eigenlijk allemaal al goed, behalve de $dbname. Daar staat achter de haakjes op dit moment 'dierenDatabase', dit omdat ik tijdens het maken van de tutorial een database gemaakt heb genaamd dierenDatabase. Tussen die haakjes kan je je eigen database naam zetten, bijvoorbeeld 'testDatabase' of 'DierenData'
+Dit staat eigenlijk allemaal al goed, behalve de $dbname. Daar staat achter de haakjes op dit moment `dierenDatabase`, dit omdat ik tijdens het maken van de tutorial een database gemaakt heb genaamd dierenDatabase. Tussen die haakjes kan je je eigen database naam zetten, bijvoorbeeld `testDatabase` of `DierenData`
 
 **LET OP: DE NAAM MOET OVEREEN KOMEN MET WAT ER BIJ PHPMYADMIN STAAT, LET GOED OP DE SPELLING**
 
-*=-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-=*
+## 💻 Hoe kan ik mijn API testen?
 
-Als je al deze stappen uitgevoerd hebt dan zou alles moeten werken, je kan nu in visual studio code een nieuwe terminal openen: Terminal > New Terminal.
+Als je al deze stappen uitgevoerd hebt dan zou alles moeten werken, je kan nu in visual studio code een nieuwe terminal openen: `Terminal > New Terminal`.
 In de terminal voer je dit command uit:
 
 ```
@@ -61,16 +61,15 @@ php -S localhost:8000
 ```
 
 Deze regel start jouw api op localhost:8000, je kan nu in je browser naar deze url gaan:
-*http://localhost:8000/dieren*
+**http://localhost:8000/dieren**
 
-Nu zou je de error 'Onjuiste API token.' moeten krijgen.
+Nu zou je de error **`Onjuiste API token.`** moeten krijgen.
 
 Je kan naar deze url gaan om de data te krijgen:
-*http://localhost:8000/dieren?token=FrfZ0SIPyPEXULxPP4RwPo9Usc1Dr77YiIuqIKoch2GZc*
+**http://localhost:8000/dieren?token=FrfZ0SIPyPEXULxPP4RwPo9Usc1Dr77YiIuqIKoch2GZc**
 
-*=-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-=*
+## 💡 Extra
 
-Als alles goed gedaan is zou je nu een scherm moeten krijgen met heel veel tekst, hier staat de data uit jouw database.
+Goed bezig, als alles goed gedaan is zou je nu een scherm moeten krijgen met heel veel tekst, hier staat de data uit jouw database. Voor overige vragen kan je altijd [onze Discord server](https://discord.graphix-development.nl/) kunnen joinen.
 
-**Gefeliciteerd, je hebt nu een api die data over 4 verschillende dieren bevat.**
-**© Ole@GraphixDevelopment**
+GD™️ | 2022 - 2023 | Alle rechten voorbehouden - Gemaakt door Ole
