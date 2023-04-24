@@ -1,6 +1,6 @@
 # Dieren API (aanpasbaar)
 
-Hoe makkelijk is het om al je data in een API te verwerken voor bijvoorbeeld mobiele apps, nou dat is mogelijk! Lees hieronder hoe je dit doet
+Hoe makkelijk is het om al je data in een API te verwerken voor bijvoorbeeld mobiele apps, super makkelijk! Lees hieronder hoe je dit doet
 
 ## 📁 Inhoud
 
