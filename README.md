@@ -10,7 +10,7 @@ Hoe makkelijk is het om al je data in een API te verwerken voor bijvoorbeeld mob
 
 ## ❓ Waar moet ik beginnen?
 
-We hebben een paar bestanden nodig, zoals dit bestand, de 'README.md'. Ook hebben we een folder genaamd 'public', in deze folder staat een bestand genaamd 'index.php'. In de index.php staat de code van onze API.
+We hebben een paar bestanden nodig, zoals dit bestand, de `README.md`. Ook hebben we een folder genaamd `/public`, in deze folder staat een bestand genaamd `index.php`. In de index.php staat de code van onze API.
 
 Voordat deze API werkt moeten we wel nog een paar dingen doen, zoals het verbinden met een mysql database.
 Voor dit project heb je een programma nodig genaamd XAMPP, als je dat al op je computer hebt staan is dat top, start dan de Apache en MySQL servers op.
@@ -22,7 +22,7 @@ Heb je dit nog niet? Installeer dit dan met hulp van de onderstaande links:
 ## 🔧 Hoe stel ik mijn database in?
 
 Als je XAMPP compleet gedownload is kunnen we beginnen aan het instellen van je database door te klikken op de start knop naast Apache en MySQL.
-Hiermee starten we onze servers, je kan dan bij de rij van MySQL klikken op 'Admin' of je gaat naar een browser en vult dit in: *http://localhost/phpmyadmin/index.php* 
+Hiermee starten we onze servers, je kan dan bij de rij van MySQL klikken op `Admin` of je gaat naar een browser en vult dit in: *http://localhost/phpmyadmin/index.php* 
 
 Je ziet nu het scherm van phpMyAdmin. Aan de linker kant staan al je databases, als het goed is zijn er al een paar. 
 Klik op 'Nieuw', dan maak je een nieuwe database aan. Dan kom je op een ander scherm, vul bij het vak "Databasenaam" de naam van jouw database.
