@@ -73,3 +73,8 @@ Je kan naar deze url gaan om de data te krijgen:
 Goed bezig, als alles goed gedaan is zou je nu een scherm moeten krijgen met heel veel tekst, hier staat de data uit jouw database. Voor overige vragen kan je altijd [onze Discord server](https://discord.graphix-development.nl/) kunnen joinen.
 
 GD™️ | 2022 - 2023 | Alle rechten voorbehouden - Gemaakt door Ole
+
+## 📸 Previews
+
+![Graphix Development](/Dieren_API.png "Graphix Development")
+
